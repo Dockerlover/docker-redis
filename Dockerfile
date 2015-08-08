@@ -4,7 +4,7 @@ FROM docker-ubuntu
 MAINTAINER  liuhong1.happy@163.com
 # 添加环境变量
 ENV USER_NAME admin
-ENV SERVICE_ID redmine
+ENV SERVICE_ID redis
 # 安装redis
 RUN         apt-get update && apt-get install -y redis-server && rm -rf /var/lib/apt/lists/*
 # 默认暴露6379端口
